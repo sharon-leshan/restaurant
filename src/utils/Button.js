@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {styles} from '../utils'
 
 const BannerButton = styled.button`
-    diplay: block;
+    display: block;
     color: ${styles.colors.mainWhite};
     background: transparent;
     padding: 0.5rem 1rem;
@@ -13,7 +13,7 @@ const BannerButton = styled.button`
     ${styles.border({color: `${styles.colors.mainWhite}`})};
     margin-top: 1rem;
     ${styles.transObject({})};
-    &hover {
+    &:hover {
         background: ${styles.colors.mainWhite};
         color: ${styles.colors.mainBlack};
         cursor: pointer;
