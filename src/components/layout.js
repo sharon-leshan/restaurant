@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createGlobalStyle } from 'styled-components'
-import Navbar from "./globals/navbar/Navbar"
-import Footer from '../components/globals/Footer'
+import { createGlobalStyle } from 'styled-components';
+import Navbar from './globals/navbar/Navbar';
+import Footer from '../components/globals/Footer';
 
 const Layout = ({ children }) => {
 	return (
-    <>
-      <GlobalStyle/>
-      <Navbar/>
-    {children}
-    <Footer/>
-    </>
-  )
-}
+		<>
+			<GlobalStyle />
+			<Navbar />
+			{children}
+			<Footer />
+		</>
+	);
+};
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     color:#262626;
     background: #fff;
   }
-`
+`;
 
 Layout.propTypes = {
 	children: PropTypes.node.isRequired,
