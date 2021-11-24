@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo'
-import {PageHeader} from '../utils'
+import {PageHeader, Banner} from '../utils'
 import contactImg from '../images/bcg/contactBcg.jpg'
 
 const ContactPage = () => {
@@ -9,7 +9,7 @@ const ContactPage = () => {
         <Layout>
             <SEO title="Contact"/>
             <PageHeader img={contactImg}>
-                <h3>Contact Page</h3>
+                <Banner title="contact us" subtitle="let's get in touch"/>
             </PageHeader>
         </Layout>
     )
