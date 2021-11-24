@@ -1,5 +1,6 @@
 ## Restaurant
 
-## Technologies 
+## Technologies
+
 - React
 - Gatsby
