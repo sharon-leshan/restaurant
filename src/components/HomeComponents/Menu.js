@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Section, Title, SectionButton } from '../../utils';
 import styled from 'styled-components';
 // import { Link } from 'gatsby';
-import Product from './Product'
+import Product from './Product';
 
 const Menu = () => {
 	const data = useStaticQuery(graphql`
@@ -11,7 +11,7 @@ const Menu = () => {
 			items: allContentfulMenu {
 				edges {
 					node {
-                        id
+						id
 						name
 						price
 						img {
@@ -28,33 +28,33 @@ const Menu = () => {
 	const { edges } = data.items;
 	console.log(edges);
 	return (
-        <Section>
-            <Title title="featured items" message="little taste"/>
-            <ProductList>
-                {edges.map(item => {
-                    return <Product key={item.node.id} product={item.node} />
-                })}
-            </ProductList>
-        </Section>
-    )
+		<Section>
+			<Title title="featured items" message="little taste" />
+			<ProductList>
+				{edges.map(item => {
+					return <Product key={item.node.id} product={item.node} />;
+				})}
+			</ProductList>
+		</Section>
+	);
 };
 
 export const ProductList = styled.div`
-    margin: 3rem 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 3rem;
-    @media (min-width: 576px) {
-        display: grid;
-        grid-template-columns: 95%;
-    }
-    @media (min-width: 776px) {
-        grid-template-columns: 80%;
-        justify-content: center;
-    }
-    @media (min-width: 992px) {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
-    }
+	margin: 3rem 0;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-row-gap: 3rem;
+	@media (min-width: 576px) {
+		display: grid;
+		grid-template-columns: 95%;
+	}
+	@media (min-width: 776px) {
+		grid-template-columns: 80%;
+		justify-content: center;
+	}
+	@media (min-width: 992px) {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+	}
 `;
 export default Menu;
