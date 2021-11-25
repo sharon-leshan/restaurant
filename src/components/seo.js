@@ -76,7 +76,8 @@ function Seo({ description, lang, meta, title }) {
 Seo.defaultProps = {
 	lang: `en`,
 	meta: [],
-	description: ``,author:`@shazyleshan`
+	description: ``,
+	author: `@shazyleshan`,
 };
 
 Seo.propTypes = {
