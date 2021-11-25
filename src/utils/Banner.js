@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { styles } from '../utils';
-// import './banner.scss';
 
 export const Banner = ({ title, subtitle, children }) => {
 	return (
