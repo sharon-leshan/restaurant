@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { styles } from '../../../utils';
-import {FaCartArrowDown} from 'react-icons/fa'
+import { FaCartArrowDown } from 'react-icons/fa';
 
 class NavbarLinks extends Component {
 	state = {
@@ -36,7 +36,7 @@ class NavbarLinks extends Component {
 						</li>
 					);
 				})}
-				<FaCartArrowDown className="cart-icon snipcart-checkout"/>
+				<FaCartArrowDown className="cart-icon snipcart-checkout" />
 			</LinkWrapper>
 		);
 	}
