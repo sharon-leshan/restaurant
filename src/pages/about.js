@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 import { PageHeader, Banner } from '../utils';
 import aboutImg from '../images/bcg/aboutBcg.jpg';
-import About from '../components/About/About'
+import About from '../components/About/About';
 
 const AboutPage = () => {
 	return (
@@ -12,7 +12,7 @@ const AboutPage = () => {
 			<PageHeader img={aboutImg}>
 				<Banner title="about us" subtitle="a little about us" />
 			</PageHeader>
-			<About/>
+			<About />
 		</Layout>
 	);
 };
