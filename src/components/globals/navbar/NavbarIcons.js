@@ -31,13 +31,8 @@ class NavbarIcons extends Component {
 	render() {
 		return (
 			<IconWrapper>
-				{this.state.icons.map(({path, id, icon}) => (
-					<a
-						href={path}
-						key={id}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+				{this.state.icons.map(({ path, id, icon }) => (
+					<a href={path} key={id} target="_blank" rel="noopener noreferrer">
 						{icon}
 					</a>
 				))}
