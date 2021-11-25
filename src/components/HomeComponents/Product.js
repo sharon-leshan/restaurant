@@ -4,7 +4,7 @@ import { styles, SectionButton } from '../../utils';
 // import Img from 'gatsby-image'
 
 const Product = ({ product }) => {
-	const {id, name, price, ingredients } = product;
+	const { id, name, price, ingredients } = product;
 	const { file } = product.img;
 
 	return (
@@ -23,7 +23,9 @@ const Product = ({ product }) => {
 					data-item-price={price}
 					data-item-image={file.url}
 					data-item-url="https://maleo-restaurant.netlify.app/"
-				>Order</SectionButton>
+				>
+					Order
+				</SectionButton>
 			</div>
 		</ProductWrapper>
 	);
