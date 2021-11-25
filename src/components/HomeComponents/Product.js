@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { styles } from '../../utils';
+import { styles, SectionButton } from '../../utils';
 // import Img from 'gatsby-image'
 
 const Product = ({ product }) => {
-	const { name, price, ingredients } = product;
+	const {id, name, price, ingredients } = product;
 	const { file } = product.img;
 
 	return (
@@ -16,6 +16,14 @@ const Product = ({ product }) => {
 					<h3 className="price">${price}</h3>
 				</div>
 				<p className="info">{ingredients}</p>
+				<SectionButton
+					className="snipcart-add-item"
+					data-item-id={id}
+					data-item-name={name}
+					data-item-price={price}
+					data-item-image={file.url}
+					data-item-url="https://maleo-restaurant.netlify.app/"
+				>Order</SectionButton>
 			</div>
 		</ProductWrapper>
 	);
