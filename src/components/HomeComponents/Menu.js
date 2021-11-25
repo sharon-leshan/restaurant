@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Section, Title, SectionButton } from '../../utils';
+import { Section, Title } from '../../utils';
 import styled from 'styled-components';
 // import { Link } from 'gatsby';
 import Product from './Product';
@@ -26,7 +26,7 @@ const Menu = () => {
 		}
 	`);
 	const { edges } = data.items;
-	console.log(edges);
+	// console.log(edges);
 	return (
 		<Section>
 			<Title title="featured items" message="little taste" />
