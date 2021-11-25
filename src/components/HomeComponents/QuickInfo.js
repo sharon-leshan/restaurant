@@ -11,7 +11,9 @@ export default class QuickInfo extends Component {
 				<Title message="let us tell you" title="our misson" />
 				<QuickInfoWrapper>
 					<p className="text">
-						Our mission is to provide happiness and joy through food to every customer who chooses to dine at Restaurant, while not exceeding, making the size of a pin hole on their pockets.
+						Our mission is to provide happiness and joy through food to every
+						customer who chooses to dine at Restaurant, while not exceeding,
+						making the size of a pin hole on their pockets.
 					</p>
 					<Link to="/about" style={{ textDecoration: 'none' }}>
 						<SectionButton style={{ margin: '2rem auto' }}>about</SectionButton>
