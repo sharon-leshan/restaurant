@@ -12,7 +12,6 @@ module.exports = {
 	plugins: [
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-image`,
-		`gatsby-plugin-sass`,
 		{
 			resolve: `gatsby-source-contentful`,
 			options: {
@@ -21,21 +20,7 @@ module.exports = {
 				accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 			},
 		},
-		{
-			resolve: `gatsby-plugin-sass`,
-			options: {
-				cssLoaderOptions: {
-					camelCase: false,
-				},
-			},
-		},
 
-		{
-			resolve: `gatsby-plugin-sass`,
-			options: {
-				implementation: require('node-sass'),
-			},
-		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
