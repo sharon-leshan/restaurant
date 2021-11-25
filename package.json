@@ -16,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^5.2.0",
     "gatsby-plugin-sass": "^5.2.0",
     "gatsby-plugin-sharp": "^4.2.0",
+    "gatsby-plugin-snipcartv3": "^2.3.3",
     "gatsby-plugin-styled-components": "^5.2.0",
     "gatsby-source-contentful": "^7.0.0",
     "gatsby-source-filesystem": "^4.2.0",
