@@ -4,8 +4,8 @@ import { HomeHeader, Banner, BannerButton } from '../utils';
 import img from '../images/bcg/homeBcg.jpg';
 import Seo from '../components/seo';
 import QuickInfo from '../components/HomeComponents/QuickInfo';
-import Gallery from '../components/HomeComponents/Gallery';
-import Menu from '../components/HomeComponents/Menu';
+// import Gallery from '../components/HomeComponents/Gallery';
+// import Menu from '../components/HomeComponents/Menu';
 import { Link } from 'gatsby';
 
 const IndexPage = () => (
@@ -19,8 +19,8 @@ const IndexPage = () => (
 			</Banner>
 		</HomeHeader>
 		<QuickInfo />
-		<Gallery />
-		<Menu />
+		{/* <Gallery />
+		<Menu /> */}
 	</Layout>
 );
 
