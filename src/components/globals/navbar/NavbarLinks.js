@@ -19,6 +19,11 @@ class NavbarLinks extends Component {
 			},
 			{
 				id: 2,
+				path: '/menu',
+				name: 'menu',
+			},
+			{
+				id: 3,
 				path: '/contact',
 				name: 'contact',
 			},
