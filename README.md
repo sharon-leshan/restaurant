@@ -6,7 +6,7 @@
 
 ## Technologies
 
-- React
+- Reactjs
 - Gatsby
 - Nodejs
 - GraphQL
