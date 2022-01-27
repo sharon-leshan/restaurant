@@ -8,7 +8,7 @@
 
 - React
 - Gatsby
-- Node
+- Nodejs
 - GraphQL
 - SnipCart
 - Webhooks (Netlify)
